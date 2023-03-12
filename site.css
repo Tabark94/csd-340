@@ -1,0 +1,37 @@
+.container{
+    margin: 50px 100px;
+}
+body {
+    background-color: black;
+    color: gold;
+}
+h1,h2,h3,h4 {
+    padding: 10px;
+    border: 1px solid #d6a800;
+    background-color: purple;
+}
+h1:hover, h2:hover, h3:hover, h4:hover {
+    background-color: gold; 
+    color: purple;
+    transform: scale(1.2);
+    text-align: center;
+    text-shadow: 1px 1px 4px black;
+}
+li {
+    list-style: none;
+}
+li a {
+    color: gold;
+}
+ul {
+    font-size: large;
+}
+li a:hover {
+    color: purple;
+}
+li a:visited {
+    color: blue;
+}
+hr {
+    border-color: gold;
+}
