@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+}
+h3 {
+    font-weight: 500;
+}
+li {
+    font-weight: 300;
+}
+ol {
+    padding: 10px;
+    list-style-type: none;
+}
+.side1 {
+    border: 1px solid red ;
+    border-radius: 15px;
+}
+.side2{
+    border: 1px dashed red;
+    border-radius: 15px; 
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.sidedivs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.side1, .side2 {
+    width: 45%;
+}
+.space {
+    width: 100%;
+    margin-top: 60%;
+}
+.footer {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 60%;
+}
