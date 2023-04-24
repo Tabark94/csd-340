@@ -1,0 +1,54 @@
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+
+}
+.intro{
+    text-indent: 2em;
+}
+h1{
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px red;
+    width: auto;
+}
+h2{
+    font-weight: 500;
+    text-align: left;
+    padding: 15px;
+    text-decoration: underline;
+}
+p{
+    line-height: 1.4em;
+}
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #4f3674;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 1.25em;
+}
+.button-link:hover {
+    background-color: #D6A800;
+    color: white;
+}
+.address{
+    text-align: center;
+    list-style: none;
+    text-decoration: solid;
+    margin-top: 70px;
+    font-style: italic;
+}
+ul li{
+    padding: 20px;
+}
+span {
+    font-weight: bold;
+    font-style: italic;
+    color: red;
+}

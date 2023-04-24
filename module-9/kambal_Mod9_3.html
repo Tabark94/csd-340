@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Module 2 Assignment">
+    <meta name="instructor" content="Professor Sue">
+    <meta name="author" content="Tabark Kambal">
+    <meta name="Date" content="March 12 2023">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="kambal_Mod9_3.css">
+</head>
+<body>
+    <h1>Assignment 9.3: JavaScript - Part 1</h1>
+    <h2>Chapter 1</h2>
+    <p class="intro">My name is Tabark Kambal. I am a student at <span id="word1">_____</span><span id="word2">_____</span><span id="word3">_____</span><span id="word4">_____</span>Bellevue University. I am hoping to graduate either late 2023 or early 2024.</p>
+    <p>I was born in Khartoum, Sudan. I moved to the United States in search of a better life. My family moved when I was 6 years old.</p>
+    <p>Currently, I work full time for the Nebraska National Guard. I have been serving for the last 6 years. I will hopefully commission as an officer next March.</p>
+    <hr/>
+    <ul class="address">
+        <li><span>Bellevue University</span> <a href="https://www.bellevue.edu/" class="button-link">Click</a></li>
+        <li>1000 Galvin Rd S,</li>
+        <li>Bellevue, Nebraska 68005</li>
+    </ul>
+
+    <script>
+        var word1Value = "peaceful";
+        var word2Value = "happy";
+        var word3Value = "loved";
+        var word4Value = "successful";
+
+        function replaceWord(wordNumber, wordValue) {
+    var wordSpan = document.getElementById("word" + wordNumber);
+    if (wordSpan) {
+        if (wordSpan.innerHTML == "") {
+            wordSpan.innerHTML = wordValue;
+        } else {
+            wordSpan.innerHTML = "";
+        }
+    }
+}
+    </script>
+
+    <button onclick="replaceWord(1, word1Value)">Replace Word 1</button>
+    <button onclick="replaceWord(2, word2Value)">Replace Word 2</button>
+    <button onclick="replaceWord(3, word3Value)">Replace Word 3</button>
+    <button onclick="replaceWord(4, word4Value)">Replace Word 4</button>
+</body>
+</html>
