@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script>
+      function displayImage(imageFile){
+        var largerImage = document.getElementById("mainImage");
+        var newNode = document.createElement("img");
+        newNode.id = "mainImage";
+        newNode.src = imageFile;
+        newNode.alt = "Large Image";
+        newNode.className = "mainImage";
+        newNode.style.width = "300px";
+        newNode.style.height = "auto";
+        newNode.style.borderRadius = "100px";
+        newNode.style.filter = "drop-shadow(0 0 20px rgba(255, 255, 255, 0.5))";
+        newNode.style.display = "flex";
+        newNode.style.justifyContent = "center";
+        largerImage.parentNode.replaceChild(newNode, largerImage);
+      }
+
+      function changeText() {
+        document.getElementById("headerText").innerHTML = "Assignment 10.3: JavaScript - Part 2";
+      }
+    </script>
+
+  </head>
+  <body onclick="changeText()">
+    <h1 id="headerText">CSD 340 Web Development with HTML and CSS</h1>
+    <div class="images">
+        <div>
+        <img src="images/cave_02.jpg" alt="Cave Image" onclick="displayImage('images/cave_01.jpg')">
+        </div>
+        <br />
+        <div>
+        <img src="images/moon_02.jpeg" alt="Moon Image" onclick="displayImage('images/moon_01.jpeg')">
+        </div>
+        <br />
+        <div>
+        <img src="images/river_02.jpeg" alt="River Image" onclick="displayImage('images/river_01.jpeg')">
+        </div>
+        <br />
+        <div>
+        <img src="images/snow_02.jpeg" alt="Snow Image" onclick="displayImage('images/snow_01.jpeg')">
+        </div>
+        <br />
+        <div>
+        <img src="images/sunset_02.jpeg" alt="Sunset Image" onclick="displayImage('images/sunset_01.jpeg')">
+        </div>
+        <br />
+        <div>
+        <img src="images/waterfall_02.jpeg" alt="Waterfall Image" onclick="displayImage('images/waterfall_01.jpeg')">
+        </div>
+        <br />
+    </div>
+    <div class="info">
+        <div      
+            onmouseover="this.style.color='red';"
+            onmouseout= "this.style.color='aqua';">
+
+        Right-click and select View Source for more details.
+        </div>
+        
+    </div>
+    <div id="mainImage">
+        <img  src="images/placeholder.jpg" alt="Large Image" class="mainImage" style="width: 300px; height: 200px;">
+    </div>
+</body>
+</html>
