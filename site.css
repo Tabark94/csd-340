@@ -13,12 +13,19 @@ h1,h2,h3,h4 {
 h1:hover, h2:hover, h3:hover, h4:hover {
     background-color: gold; 
     color: purple;
-    transform: scale(1.2);
+    transform: scale(1.1);
+    transition: .5s;
     text-align: center;
     text-shadow: 1px 1px 4px black;
 }
+h1:not(:hover), h2:not(:hover), h3:not(:hover), h4:not(:hover) {
+    transition: 0.5s;
+    transform: scale(1);
+}
 li {
     list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 li a {
     color: gold;
