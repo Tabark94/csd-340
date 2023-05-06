@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color:rgb(184, 180, 176);
+    text-transform: uppercase;
+}
+  
+main{
+    width: 1000px;
+    margin: auto;  
+    margin-top: 100px;
+    border-radius: 30px;
+    box-shadow: 5px 10px 20px rgb(153, 149, 145);
+    transition: .5s ease-out;
+}
+@keyframes pulse {
+    0% {
+        box-shadow: 5px 5px 20px white;
+    }
+    50% {
+      box-shadow: 5px 5px 40px white;
+    }
+    100% {
+        box-shadow: 5px 5px 20px white;
+    }
+}
+main:hover{
+    scale: 1.09;
+    transition: 1s;
+    box-shadow: 5px 10px 20px white;
+    animation: pulse 3s ease-out infinite;
+}
+label{
+    font-weight: bold;
+    padding-right: 10px;
+}
+button{
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 15px;
+    text-transform: uppercase;
+    box-shadow: 5px 10px 20px rgb(153, 149, 145);
+    font-weight: bold;
+    transition: .5s ease-out
+}
+button:hover{
+    box-shadow: 5px 10px 20px white;
+    color: white;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.actions{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.output{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.output ul{
+    list-style: none;
+    margin-bottom: 100px;
+}
+.output ul li{
+    border-radius: 10px;
+    text-align: center;
+    width: 800px;
+    box-shadow: 5px 10px 20px rgb(153, 149, 145);
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.output ul li:hover{
+    transition: 0.5s ease-out;
+    box-shadow: 5px 10px 20px white;
+    color: white;
+}
